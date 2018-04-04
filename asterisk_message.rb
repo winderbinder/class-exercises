@@ -10,13 +10,13 @@ def frame words
   end
  
   
-  framelength = longest_word.length
+  frame_length = longest_word.length
 
-  puts "*"*(framelength + 5)
+  puts "*"*(frame_length + 5)
   word_array.each do |word|
-    puts "* #{word} #{" " * (framelength - word.length)} *"
+    puts "* #{word} #{" " * (frame_length - word.length)} *"
   end
-  puts "*"*(framelength + 5)
+  puts "*"*(frame_length + 5)
 end 
 
 p frame("hello from the underworld and above")
