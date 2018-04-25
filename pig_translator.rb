@@ -1,18 +1,16 @@
 def translator(word)
   words = word.split(" ")
-  words.each do |x|
-    if %w[a e i o u].include?x[0,1]
-      x << "ay"
+  words.each do |letter|
+    if ["a","e","i","o","u"].include?(letter[0,1])
+      letter << ("ay")
     else
-    until %w[a e i o u].include?x[0,1]
-      x << ("#{x[0,1]}")
-      x[0,1] = (" ")
+      until ["a","e","i","o","u"].include?(letter[0,1])
+        letter << ("#{letter[0,1]}")
+        letter[0,1] = ("")
+      end
+      letter << ("ay")
     end
-    x << ("ay")
-    end
-  end 
+  end
 end
 
 puts translator("the quick brown fox")
-
-# pig latin translator

@@ -36,13 +36,11 @@ rangers = [
   'Mazara'
 ]
 
-
+# the splat operator iterates through an infinite amount of arguments so in other words splat takes in whatever arguments you give this takes every header array element and then goes through astros and rangers to assign them their element
 
 def position_filter(headers, *data)
   headers.zip(*data)
 end
-
-position_filter(headers, astros, rangers)
 
 
 
