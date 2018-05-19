@@ -12,3 +12,6 @@ def weapons_for_people weapons
 end
 
 p weapons_for_people("Laval")
+
+
+
