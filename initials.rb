@@ -1,5 +1,5 @@
 def initials(name)
-  name.split(" ").map{ |char| char.upcase}.join("")
+  name.split.map { |char| char[0].upcase}.join(".")
 end
 
 p initials("peter parker")
